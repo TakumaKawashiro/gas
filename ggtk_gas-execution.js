@@ -1,7 +1,7 @@
 /*
  *  ggtk_gas-execution.js
  *  Update: 2018-05-08
- *  Version: 1.0.0
+ *  Version: 1.0.1
  *
  *  Copyright (c) 2018 Takuma Kawashiro
  *  This software is released under the MIT License.
@@ -44,7 +44,7 @@ class Gas {
 
       document.addEventListener("DOMContentLoaded", ()=>{
         document.getElementsByTagName("head")[0].appendChild(script);
-      }
+      });
     });
   }
 
