@@ -1,6 +1,6 @@
 Google Apps Script Execution Plugin
 ---
-Software Version: 1.0.1 Update: 2018/05/08  
+Software Version: 1.0.2 Update: 2018/05/08  
 Document Version: 1.0.0 Update: 2018/05/08
 
 ## Description

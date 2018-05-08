@@ -1,7 +1,7 @@
 /*
  *  ggtk_gas-execution.js
  *  Update: 2018-05-08
- *  Version: 1.0.1
+ *  Version: 1.0.2
  *
  *  Copyright (c) 2018 Takuma Kawashiro
  *  This software is released under the MIT License.
@@ -13,6 +13,7 @@
 */
 
 _ggtkGasExecution = {};
+_ggtkGasExecutionOnLoad = null;
 
 class Gas {
   constructor(properties) {
@@ -34,11 +35,11 @@ class Gas {
     return new Promise(resolve=>{
       _ggtkGasExecution.loading = true;
 
-      let script = document.createElement("script");
-      script.src = "https://apis.google.com/js/client.js";
-      script.onload = ()=>{
+      var script = document.createElement("script");
+      script.src = "https://apis.google.com/js/client.js?onload=_ggtkGasExecutionOnLoad";
+      _ggtkGasExecutionOnLoad = ()=>{
         _ggtkGasExecution.loading = false;
-        _ggtkGasExecution.loaded = false;
+        _ggtkGasExecution.loaded = true;
         resolve();
       };
 
