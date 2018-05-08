@@ -1,7 +1,7 @@
 Google Apps Script Execution Plugin
 ---
 Software Version: 1.0.2 Update: 2018/05/08  
-Document Version: 1.0.0 Update: 2018/05/08
+Document Version: 1.0.1 Update: 2018/05/08
 
 ## Description
 ---
@@ -75,7 +75,7 @@ gas.activate().then(function() {
 ~~~
 
 There are 2 ways to authorize.  
-One is authorize automatically. Any popup window doesn't displayed.  
+One is authorize automatically. Any windows will not be popped up.  
 Another way is authorize by users' action. Users have to allow your application to access their datas. When users use your application for the first time, your application have to use this way.
 
 In order to switch the way of authorization, set argument when you call `auth()`.
